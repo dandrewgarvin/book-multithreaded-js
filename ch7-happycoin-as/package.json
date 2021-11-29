@@ -1,0 +1,17 @@
+{
+  "name": "ch7-happycoin-as",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "asc happycoin.ts --binaryFile happycoin.wasm --exportRuntime",
+    "start": "node --no-warnings --experimental-wasi-unstable-preview1 happycoin.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.20",
+    "assemblyscript": "^0.19.20"
+  }
+}
